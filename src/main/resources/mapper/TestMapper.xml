@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hxsmart.demo.mapper.TestMapper">
+    <resultMap id="BaseResultMap" type="com.hxsmart.demo.model.Test"></resultMap>
+    <!--<resultMap id="BaseResultMap" type="com.hxsmart.demo.model.Test">-->
+        <!--<id column="Id" property="Id" jdbcType="INTEGER" />-->
+        <!--<result column="Name" property="Name" jdbcType="VARCHAR" />-->
+    <!--</resultMap>-->
+    <!--<sql id = "Base_Column_List">-->
+        <!--Id, Name-->
+    <!--</sql>-->
+    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        <!--SELECT-->
+        <!--<include refid="Base_Column_List" />-->
+        <!--FROM demo-->
+        SELECT * FROM user
+    </select>
+</mapper>
